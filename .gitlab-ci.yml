@@ -17,7 +17,8 @@ flake8_check:
   script:
     - echo "Running Flake8..."
     # TODO: Add the command to run Flake8 on the entire project.
-    # Hint: flake8 .
+    - flake8 main.py
+    - flake8 tests/test_main.py
     - # Students to fill this line
   allow_failure: false # The pipeline will fail if Flake8 finds issues
 
@@ -27,5 +28,6 @@ pytest_run:
     - echo "Running Pytest..."
     # TODO: Add the command to run Pytest.
     # Hint: pytest tests/ (if tests are in a 'tests' directory) or just 'pytest'
+    - pytest tests/
     - # Students to fill this line
   allow_failure: false # The pipeline will fail if any tests fail

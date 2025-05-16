@@ -62,10 +62,12 @@ La fonction vérifie les critères de longueur, de caractères majuscules/minusc
 
 ## Project Structure
 
-(Optional: Students can briefly describe the main files if they wish)
-
 * main.py: Contains the FastAPI application logic for the password strength checker.
 * requirements.txt: Lists the Python dependencies.
 * tests/: Contains the automated tests.
 * .gitlab-ci.yml: Defines the GitLab CI/CD pipeline.
 * README.md: This file.
+* pip-audit -r requirements.txt: Permet de vérifier les vulnérabilités des dépendances
+* écrites dans requirements.txt. Affiche: No known vulnerabilities found 
+
+- Etape 5:
