@@ -126,6 +126,7 @@ async def health_check_strength_checker():
     return {"status_strength_checker": "ok"}
 
 # For running with `python main.py`
+# FAKE_DB_PASSWORD = "superS3cretP@ssword!"
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
